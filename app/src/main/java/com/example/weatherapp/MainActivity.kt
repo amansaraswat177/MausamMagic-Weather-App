@@ -1,18 +1,16 @@
 package com.example.weatherapp
 
-import android.content.ContentValues.TAG
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+
 import androidx.appcompat.widget.SearchView
 import com.example.weatherapp.databinding.ActivityMainBinding
-import com.google.gson.Gson
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.sql.Timestamp
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -90,7 +88,7 @@ class MainActivity : AppCompatActivity() {
                         binding.day.text = dayName(System.currentTimeMillis())
                         binding.date.text = date()
                         binding.cityName.text = "$cityName"
-//done
+                        //done
                         // Log.d("TAG", "onResponse: $temperature")
                         changeImageaccordingToweathercondition(condition)
                         }
